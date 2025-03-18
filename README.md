@@ -20,9 +20,30 @@ The rover is equipped with an **ESP32-CAM** module for capturing images and an *
 4. The analysis results are displayed on the web dashboard.
 5. Farmers can use the dashboard to track crop conditions and send movement commands to the rover.
 
+## 🤖 AI Models
+AgriGuard uses powerful deep learning models for crop health analysis. These models include:
+
+### **ResNet50**
+- **Overview**: A 50-layer deep convolutional neural network (CNN) that uses residual connections to overcome the vanishing gradient problem.
+- **Advantages**:
+  - Residual connections allow for deeper networks and efficient training.
+  - Pre-trained on ImageNet and fine-tuned for agricultural data to detect diseases in crops.
+- **Use Case**: Detecting diseases such as fungal infections or blights.
+
+### **Xception**
+- **Overview**: A deep convolutional model that utilizes depthwise separable convolutions to reduce computational cost while maintaining performance.
+- **Advantages**:
+  - More efficient than traditional convolutions.
+  - Performs well in fine-grained image classification tasks.
+- **Use Case**: Classifying soil conditions or detecting pest damage.
+
+### **DenseNet121**
+- **Overview**: A deep neural network with dense connections that help improve gradient flow and feature reuse.
+- **Advantages**:
+  - Dense connections improve accuracy while keeping parameters low.
+  - Well-suited for early-stage disease detection and subtle texture analysis in plant images.
+- **Use Case**: Detecting early-stage diseases like powdery mildew.
+
 ## 📌 Contribution
 We welcome contributions! If you're interested in enhancing AgriGuard, feel free to open issues and submit pull requests.
-
-## 📜 License
-This project is licensed under the MIT License.
 
